@@ -798,6 +798,7 @@ label[for="next"] {
 
     .headerLeft .img {
         padding-right: 10px;
+
     }
 
     .headerLeft .img img {
@@ -945,18 +946,27 @@ label[for="next"] {
         display: none;
     }
 
-    #pre~.content .sOne,#pre~.content .sTwo,#pre~.content .sThree,#pre~.content .sFour,
-    #pre~.content .sFive ,.content .sSix ,.content .sSeven {
+    #pre~.content .sOne,
+    #pre~.content .sTwo,
+    #pre~.content .sThree,
+    #pre~.content .sFour,
+    #pre~.content .sFive,
+    .content .sSix,
+    .content .sSeven {
         display: none;
     }
 
-    #pre:checked~.content .sOne,#pre:checked~.content .sTwo,#pre:checked~.content .sThree {
+    #pre:checked~.content .sOne,
+    #pre:checked~.content .sTwo,
+    #pre:checked~.content .sThree {
         display: grid;
     }
 
-    #next:checked~.content .sFour, #next:checked~.content .sSix,#next:checked~.content .sSeven{
-    	display: grid;
-    } 
+    #next:checked~.content .sFour,
+    #next:checked~.content .sSix,
+    #next:checked~.content .sSeven {
+        display: grid;
+    }
 
     .services .item .details {
         color: white;
@@ -1035,6 +1045,12 @@ label[for="next"] {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
     }
+
+    .headerLeft .img {
+        background: #fff;
+        border-radius: 6px;
+    }
+
 
     .headerCont .headerLeft {
         grid-template-columns: 3fr 2fr;
@@ -1118,20 +1134,41 @@ label[for="next"] {
         grid-column-gap: 15px;
     }
 
-     #pre~.content .sOne,#pre~.content .sTwo,#pre~.content .sThree,#pre~.content .sFour,
-    #pre~.content .sFive ,.content .sSix ,.content .sSeven {
+    .content .sSix,
+    .content .sSeven {
+        transition: transform 0.5s;
+        transform: translateX(-600%);
+    }
+
+
+    #pre~.content .sOne,
+    #pre~.content .sTwo,
+    #pre~.content .sThree,
+    #pre~.content .sFour,
+    #pre~.content .sFive,
+    .content .sSix,
+    .content .sSeven {
         display: none;
     }
 
 
-    #pre:checked~.content .sOne,#pre:checked~.content .sTwo,#pre:checked~.content .sThree,#pre:checked~.content .sFour,
+    #pre:checked~.content .sOne,
+    #pre:checked~.content .sTwo,
+    #pre:checked~.content .sThree,
+    #pre:checked~.content .sFour,
     #pre:checked~.content .sFive {
         display: grid;
     }
 
-    #next:checked~.content .sThree,#next:checked~.content .sFour,#next:checked~.content .sFive,#next:checked~.content .sSix,#next:checked~.content .sSeven{
-    	display: grid;
-    } 
+    #next:checked~.content .sThree,
+    #next:checked~.content .sFour,
+    #next:checked~.content .sFive,
+    #next:checked~.content .sSix,
+    #next:checked~.content .sSeven {
+        display: grid;
+        transition: transform 0.5s;
+        transform: translateX(0%);
+    }
 
 
     .services .item .details {
