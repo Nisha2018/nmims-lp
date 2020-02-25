@@ -1,587 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>NIMIMS</title>
-        <style type="text/css">
-            *{font-family:'Source Sans Pro', sans-serif}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:disc;}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{font-size:210%;}
-        </style>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Roboto:400,500,700,900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="public/img/favicon.png">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-        <link rel="stylesheet" href="public/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NIMIMS</title>
+    <style type="text/css">
+    * {
+        font-family: 'Source Sans Pro', sans-serif
+    }
 
-    <body onload="submit()">
-        <section class="header">
-            <div class="headerCont">
-                <div class="headerLeft">
-                    <div class="headerTop">
-                        <p class="">SVKM'S</p>
-                        <p class="">Narsee Monjee Institute of Management Studies</p>
-                        <p class="">Declared as Deemed-to-be University under section 3 of UGC Act 1956</p>
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block
+    }
+
+    body {
+        line-height: 1
+    }
+
+    ol,
+    ul {
+        list-style: disc;
+    }
+
+    blockquote,
+    q {
+        quotes: none
+    }
+
+    blockquote:after,
+    blockquote:before,
+    q:after,
+    q:before {
+        content: '';
+        content: none
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    body {
+        font-size: 210%;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="public/img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body onload="submit()">
+    <section class="header">
+        <div class="headerCont">
+            <div class="headerLeft">
+                <div class="headerTop">
+                    <p class="">SVKM'S</p>
+                    <p class="">Narsee Monjee Institute of Management Studies</p>
+                    <p class="">Declared as Deemed-to-be University under section 3 of UGC Act 1956</p>
+                </div>
+                <div class="img">
+                    <img src="public/img/logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="headerRight">
+                <div class="title">
+                    <p class="">Authorised <span class="fRed">Enrolment Partner</span></p>
+                </div>
+                <div class="text">
+                    <p class="">Halo Technologies Pvt. Ltd.</p>
+                </div>
+                <!-- <div class="icon">
+                        <i class="fas fa-phone-square-alt"></i>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="cover">
+        <div class="coverCont">
+            <div class="coverHead">
+                <div class="coverHeading">
+                    <p class="">The right <br> step towards your <br> career goals</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <p class="cardHead">200+</p>
+                        <p class="cardText">Acclaimed Faculty</p>
                     </div>
-                    <div class="img">
-                        <img src="public/img/logo.jpg" alt="">
+                    <div class="card">
+                        <p class="cardHead">Balance</p>
+                        <p class="cardText">work, life & study</p>
+                    </div>
+                    <div class="card">
+                        <p class="cardHead">Awarded Category 1</p>
+                        <p class="cardText">Autonomy by UGC</p>
+                    </div>
+                    <div class="card">
+                        <p class="cardHead">Grade A+ NAAC</p>
+                        <p class="cardText">Accredited</p>
                     </div>
                 </div>
-                <div class="headerRight">
+            </div>
+            <div class="coverForm">
+                <div class="formHead">
+                    <div class="heading">
+                        <p class="hrRed">Inquire Now</p>
+                    </div>
+                    <div class="text">
+                        <p class="">Admissions Open</p>
+                        <p class="">Last date to apply </p>
+                    </div>
+                </div>
+                <form class="form" id="form" method="POST" action="">
+                    <input type="hidden" name="Source" id="source">
+                    <input type="hidden" name="trans" id="trans">
+                    <input type="hidden" name="Geo" id="geo">
+                    <div class="inputs">
+                        <label>Name</label>
+                        <input class="input" name="Name" type="text" placeholder="Enter full name" required="true">
+                    </div>
+                    <div class="inputs">
+                        <label>Email</label>
+                        <input class="input" name="Email" type="email" placeholder="eg. abc@gmail.com" required="true">
+                    </div>
+                    <div class="inputs">
+                        <label>Contact Number</label>
+                        <input class="input" name="Number" pattern="[0-9]{10}" type="text" placeholder="+91 000 000 0000" required="true">
+                    </div>
+                    <div class="inputs">
+                        <label>City</label>
+                        <select class="dropdown city" id="cities" name="City" required="true">
+                            <option class="" value="">Select City</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Navi Mumbai">Navi Mumbai</option>
+                        </select>
+                    </div>
+                    <div class="btns">
+                        <button class="btn">SUBMIt</button>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay" id="form-message">
+                <div class="popupText">
+                    <p class="">Thank you for contacting us. <br> We will get back to you soon</p>
+                    <div class="close">
+                        <a class="close" onclick="popupclose()">&times;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="future">
+        <div class="futureCont">
+            <div class="img">
+                <img src="public/img/future.png">
+            </div>
+            <div class="head">
+                <div class="heading">
+                    <p class="hrRed">Be future-<span class="fRed">ready</span></p>
+                </div>
+                <div class="sub">
+                    <p class="">With programs that prepare you for the next stage of your professional life!</p>
+                </div>
+                <div class="text">
+                    <p class="">We, at Narsee Monjee Distance Learning, take immense pride in offering you diverse programs that take your career to the next level and pave the way for your success. Since these programs have been thoughtfully designed for working professionals like you they feature flexible exam timings and well-planned schedules, thereby empowering you to balance your study and work life. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="programs">
+        <div class="programsCont">
+            <div class="head">
+                <div class="heading">
+                    <p class="hrWhite">Distance Learning Programs</p>
+                </div>
+                <!--<div class="sub"></div>-->
+            </div>
+            <input type="radio" checked name="program" id="tab1">
+            <input type="radio" name="program" id="tab2">
+            <input type="radio" name="program" id="tab3">
+            <input type="radio" name="program" id="tab4">
+            <div class="labels">
+                <div class="label1">
+                    <label for="tab1">Post Graduate Diploma Programs</label>
+                </div>
+                <div class="label2">
+                    <label for="tab2">Diploma Programs</label>
+                </div>
+                <div class="label3">
+                    <label for="tab3">Professional Programs</label>
+                </div>
+                <div class="label4">
+                    <label for="tab4">Certificate Programs</label>
+                </div>
+            </div>
+            <div class="content">
+                <div class="items">
+                    <div class="item one">
+                        <ul class="elements">
+                            <div class="element">
+                                <li class=""> <i class="fas fa-square-full"></i> Post Graduate Diploma in Business Management(PGDBM)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Marketing Management)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Financial Management)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Human Resource Mamangement)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(International Trade Management)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Banking and Finance Management)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Supply Chain Managrment)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Operations Management)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Retail Management)</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> PGDBM(Information Technology &amp; Systems Management)</li>
+                            </div>
+                        </ul>
+                        <div class="mobileRadio">
+                            <label for="tab4" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="tab2" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item two">
+                        <ul class="elements">
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> Business Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Marketing Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Financial Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Human Resource Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>International Trade Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Banking and Finance Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Operations Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Retail Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Supply Chain Management</li>
+                            </div>
+                        </ul>
+                        <div class="mobileRadio">
+                            <label for="tab1" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="tab3" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item three">
+                        <ul class="elements">
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> Digital Marketing</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i> Wealth Management</li>
+                            </div>
+                        </ul>
+                        <div class="mobileRadio">
+                            <label for="tab2" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="tab4" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item four">
+                        <ul class="elements">
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>IT Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Operations Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Project Management</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Corporate Communication</li>
+                            </div>
+                            <div class="element">
+                                <li class=""><i class="fas fa-square-full"></i>Business Management</li>
+                            </div>
+                        </ul>
+                        <div class="mobileRadio">
+                            <label for="tab3" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="tab1" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="servicesCont">
+            <div class="head">
+                <div class="heading">
+                    <p class="hrRed">Lead The <span class="fRed">Future</span></p>
+                </div>
+            </div>
+            <input type="radio" checked name="slide" id="pre">
+            <input type="radio" name="slide" id="next">
+            <div class="mobileRadio show">
+                <label for="pre"><i class="fas fa-angle-left"></i></label>
+                <label for="next"><i class="fa fa-angle-right"></i></label>
+            </div>
+            <input type="radio" checked name="service" id="ser1">
+            <input type="radio" name="service" id="ser2">
+            <input type="radio" name="service" id="ser3">
+            <input type="radio" name="service" id="ser4">
+            <input type="radio" name="service" id="ser5">
+            <input type="radio" name="service" id="ser6">
+            <input type="radio" name="service" id="ser7">
+            <div class="content">
+                <div class="items">
+                    <div class="item sOne">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">Study <br> Anytime <br> anywhere</p>
+                            </div>
+                            <div class="text">
+                                <p class="">24/7 online <br> access to all content, <br> including recorded <br> lectures</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei01.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser4" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser2" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item sTwo">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">High Focus <br> on Academic <br> Exellence</p>
+                            </div>
+                            <div class="text">
+                                <p class="">200+ faculty members, <br> including academicians <br> and industry experts <br> Globally curated <br> curiculum</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei02.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser1" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser3" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item sThree">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">Dynamic, <br>Application <br> Orinted <br> Assessement</p>
+                            </div>
+                            <div class="text">
+                                <p class="">Computer based <br> exams at designated <br> centres all over <br> India</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei03.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser2" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser4" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item sFour">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">Convenint <br> Payment <br> Option</p>
+                            </div>
+                            <div class="text">
+                                <p class="">Flexible payment <br> options with loan <br> facility</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei04.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser3" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser5" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item sFive">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">Career <br> Services</p>
+                            </div>
+                            <div class="text">
+                                <p class="">Unique services offering <br> career development $ loan <br> assistance Right <br>memoring and guidance</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei05.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser4" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser6" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item sSix">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">Best-in-class<br> Student Services </p>
+                            </div>
+                            <div class="text">
+                                <p class="">Multiple touchpoints; email, <br>toll free no. and live chat <br>Dedicated student support team</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei05.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser5" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser7" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                    <div class="item sSeven">
+                        <div class="details">
+                            <div class="title">
+                                <p class="">Latest Online <br>Learning Systems </p>
+                            </div>
+                            <div class="text">
+                                <p class="">Excellent mobile application <br>based learning platform Facilities like recorded <br>lectures & eBooks</p>
+                            </div>
+                            <div class="img">
+                                <img src="public/img/servicei05.png">
+                            </div>
+                        </div>
+                        <div class="mobileRadio">
+                            <label for="ser6" class="pre"><i class="fas fa-angle-left"></i></label>
+                            <label for="ser1" class="next"><i class="fa fa-angle-right"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="aboutCont">
+            <div class="head">
+                <div class="heading">
+                    <p class="hrWhite">About</p>
+                </div>
+                <div class="sub">
+                    <p class="">Founded by the highly renowned SVKM's NMIMS, NGASCE, i.e. NMIMS Global Access School for Continuing Education, is the leading distance management university in India. from being India's top-notch distance learning establishment to creating the best online education platform, it has been a dynamic fulfilling.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <p class="hrWhite">NMIMS Global Access Forte</p>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="title">
+                            <p class="">38000+</p>
+                        </div>
+                        <div class="text">
+                            <p class="">Active students</p>
+                        </div>
+                        <div class="img">
+                            <img src="public/img/abouti01.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">
+                            <p class="">6000+</p>
+                        </div>
+                        <div class="text">
+                            <p class="">Alumni</p>
+                        </div>
+                        <div class="img">
+                            <img src="public/img/abouti02.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <p class="">Students from</p>
+                        </div>
+                        <div class="title">
+                            <p class="">300+</p>
+                        </div>
+                        <div class="text">
+                            <p class="">Locations across India</p>
+                        </div>
+                        <div class="img">
+                            <img src="public/img/abouti03.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="connect">
+        <div class="connectCont">
+            <div class="aep-img">
+                <img src="public/img/4.jpg" alt="img">
+            </div>
+            <div class="partner">
+                <div class="top">
+                    <div class="img">
+                        <img src="public/img/partner.jpg">
+                    </div>
                     <div class="title">
                         <p class="">Authorised <span class="fRed">Enrolment Partner</span></p>
                     </div>
-                    <div class="text">
+                    <div class="sub">
                         <p class="">Halo Technologies Pvt. Ltd.</p>
                     </div>
-                    <!-- <div class="icon">
-                        <i class="fas fa-phone-square-alt"></i>
-                    </div> -->
+                </div>
+                <div class="text">
+                    <p class="">As an official Authorised Enrolment Partner of NGA-SCE, we provide logistical support to the students enrolled through this respective centres and assist & facilitate prospective students to take admissions.</p>
+                </div>
+                <div class="text">
+                    <p class=""><span class="fRed">Note*: </span>Program delivery remains a prerogative of NGA-SGE alone., <br>Authorized Enrolment Partner has no role in it.</p>
                 </div>
             </div>
-        </section>
-
-        <section class="cover">
-            <div class="coverCont">
-                <div class="coverHead">
-                    <div class="coverHeading">
-                        <p class="">The right <br> step towards your <br> career goals</p>
-                    </div>
-                    <div class="cards">
-                            <div class="card">
-                                <p class="cardHead">200+</p>
-                                <p class="cardText">Acclaimed Faculty</p>
-                            </div>
-                            <div class="card">
-                                <p class="cardHead">Balance</p>
-                                <p class="cardText">work, life & study</p>
-                            </div>
-                            <div class="card">
-                                <p class="cardHead">Awarded Category 1</p>
-                                <p class="cardText">Autonomy by UGC</p>
-                            </div>
-                            <div class="card">
-                                <p class="cardHead">Grade A+ NAAC</p>
-                                <p class="cardText">Accredited</p>
-                            </div>
-                        </div>
-                </div>
+            <div class="connectDetail">
                 
-                <div class="coverForm">   
-                    <div class="formHead">
+                <div class="content">
+                    <div class="head">
                         <div class="heading">
-                            <p class="hrRed">Inquire Now</p>
-                        </div>
-                        <div class="text">
-                            <p class="">Admissions Open</p>
-                            <p class="">Last date to apply </p>
-                        </div>
-                    </div>                  
-                    <form class="form" id="form" method="POST" action="">      
-                        <input type="hidden" name="Source" id="source">
-                        <input type="hidden" name="trans" id="trans">
-                        <input type="hidden" name="Geo" id="geo">
-
-                        <div class="inputs">
-                            <label>Name</label>
-                            <input class="input" name="Name" type="text" placeholder="Enter full name" required="true">
-                        </div>
-                        <div class="inputs">
-                            <label>Email</label>
-                            <input class="input" name="Email" type="email" placeholder="eg. abc@gmail.com" required="true">
-                        </div>
-                        <div class="inputs">
-                            <label>Contact Number</label>
-                            <input class="input" name="Number"  pattern="[0-9]{10}"  type="text" placeholder="+91 000 000 0000" required="true">
-                        </div>
-                        <div class="inputs">
-                            <label>City</label>
-                            <select class="dropdown city" id="cities" name="City" required="true"> 
-                                <option class="" value="">Select City</option>
-                                <option value="Indore">Indore</option>
-                                <option value="Kolkata">Kolkata</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Bangalore">Bangalore</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                                <option value="Ahmedabad">Ahmedabad</option>
-                                <option value="Mumbai">Mumbai</option>
-                                <option value="Pune">Pune</option>
-                                <option value="Navi Mumbai">Navi Mumbai</option>
-                            </select>
-                        </div>
-
-                        <div class="btns">
-                            <button class="btn">SUBMIt</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="overlay" id="form-message">
-                    <div class="popupText">
-                        <p class="">Thank you for contacting us. <br> We will get back to you soon</p>
-                        <div class="close">
-                            <a class="close" onclick="popupclose()">&times;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="future">
-            <div class="futureCont">
-                <div class="img">
-                    <img src="public/img/future.png">
-                </div>
-                <div class="head">
-                    <div class="heading">
-                        <p class="hrRed">Be future-<span class="fRed">ready</span></p>
-                    </div>
-                    <div class="sub">
-                        <p class="">With programs that prepare you for the next stage of your professional life!</p>
-                    </div>
-                    <div class="text">
-                        <p class="">We, at Narsee Monjee Distance Learning, take immense pride in offering you diverse programs that take your career to the next level and pave the way for your success. Since these programs have been thoughtfully designed for working professionals like you they feature flexible exam timings and well-planned schedules, thereby empowering you to balance your study and work life. </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="programs">
-            <div class="programsCont">
-                <div class="head">
-                    <div class="heading">
-                        <p class="hrWhite">Distance Learning Programs</p>
-                    </div>
-                    <!--<div class="sub"></div>-->
-                </div>
-                <input type="radio" checked name="program" id="tab1">
-                <input type="radio" name="program" id="tab2">
-                <input type="radio" name="program" id="tab3">
-                <input type="radio" name="program" id="tab4">
-                <div class="labels">
-                    <div class="label1">
-                        <label for="tab1">Post Graduate Diploma Programs</label>
-                    </div>
-                    <div class="label2">
-                        <label for="tab2">Diploma Programs</label>
-                    </div>
-                    <div class="label3">
-                        <label for="tab3">Professional Programs</label>
-                    </div>
-                    <div class="label4">
-                        <label for="tab4">Certificate Programs</label>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="items">
-                        <div class="item one">
-                            <ul class="elements">
-                                <div class="element">
-                                    <li class=""> <i class="fas fa-square-full"></i> Post Graduate Diploma in Business Management(PGDBM)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Marketing Management)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Financial Management)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Human Resource Mamangement)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(International Trade Management)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Banking and Finance Management)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Supply Chain Managrment)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Operations Management)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Retail Management)</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> PGDBM(Information Technology &amp; Systems Management)</li>
-                                </div>
-                            </ul>
-                            <div class="mobileRadio">
-                                <label for="tab4" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="tab2" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                        <div class="item two">
-                            <ul class="elements">
-                                
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i> Business Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Marketing Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Financial Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Human Resource Management</li>
-                                </div>
-                                
-                                
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>International Trade Management</li>
-                                </div>
-                                
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Banking and Finance Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Operations Management</li>
-                                </div>
-                                
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Retail Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Supply Chain Management</li>
-                                </div>
-                            </ul>
-                            <div class="mobileRadio">
-                                <label for="tab1" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="tab3" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                        <div class="item three">
-                            <ul class="elements">
-                                    <div class="element">
-                                        <li class=""><i class="fas fa-square-full"></i> Digital Marketing</li>
-                                    </div>
-                                    <div class="element">
-                                        <li class=""><i class="fas fa-square-full"></i> Wealth Management</li>
-                                    </div>
-                                   
-                                </ul>
-                            <div class="mobileRadio">
-                                <label for="tab2" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="tab4" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                        <div class="item four">
-                            <ul class="elements">
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>IT Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Operations Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Project Management</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Corporate Communication</li>
-                                </div>
-                                <div class="element">
-                                    <li class=""><i class="fas fa-square-full"></i>Business Management</li>
-                                </div>
-                            </ul>
-                            <div class="mobileRadio">
-                                <label for="tab3" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="tab1" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="servicesCont">
-                <div class="head">
-                    <div class="heading">
-                        <p class="hrRed">Lead The <span class="fRed">Future</span></p>
-                    </div>
-                    <!--<div class="sub"></div>-->
-                </div>
-                <input type="radio" checked name="service" id="ser1">
-                <input type="radio" name="service" id="ser2">
-                <input type="radio" name="service" id="ser3">
-                <input type="radio" name="service" id="ser4">
-                <input type="radio" name="service" id="ser5">
-
-                <div class="content">
-                    <div class="items">
-                        <div class="item sOne">
-                            <div class="details">
-                                <div class="title">
-                                    <p class="">Study <br> Anytime <br> anywhere</p>
-                                </div>
-                                <div class="text">
-                                    <p class="">24/7 online <br> access to all content, <br> including recorded <br> lectures</p>
-                                </div>
-                                <div class="img">
-                                    <img src="public/img/servicei01.png">
-                                </div>
-                            </div>
-                            
-                            <div class="mobileRadio">
-                                <label for="ser4" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="ser2" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                        <div class="item sTwo">
-                            <div class="details">
-                                <div class="title">
-                                    <p class="">High Focus <br> on Academic <br> Exellence</p>
-                                </div>
-                                <div class="text">
-                                    <p class="">200+ faculty members, <br> including academicians <br> and industry experts <br> Globally curated <br> curiculum</p>
-                                </div>
-                                <div class="img">
-                                    <img src="public/img/servicei02.png">
-                                </div>
-                            </div>
-                            
-                            <div class="mobileRadio">
-                                <label for="ser1" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="ser3" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                        <div class="item sThree">
-                            <div class="details">
-                                <div class="title">
-                                    <p class="">Dynamic, <br>Application <br> Orinted <br> Assessement</p>
-                                </div>
-                                <div class="text">
-                                    <p class="">Computer based <br> exams at designated <br> centres all over <br> India</p>
-                                </div>
-                                <div class="img">
-                                    <img src="public/img/servicei03.png">
-                                </div>
-                            </div>
-                            
-                            <div class="mobileRadio">
-                                <label for="ser2" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="ser4" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                        </div>
-                        <div class="item sFour">
-                            <div class="details">
-                                <div class="title">
-                                    <p class="">Convenint <br> Payment <br> Option</p>
-                                </div>
-                                <div class="text">
-                                    <p class="">Flexible payment <br> options with loan <br> facility</p>
-                                </div>
-                                <div class="img">
-                                    <img src="public/img/servicei04.png">
-                                </div>
-                            </div>
-                            <div class="mobileRadio">
-                                <label for="ser3" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="ser5" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                            
-                        </div>
-                        <div class="item sFive">
-                            <div class="details">
-                                <div class="title">
-                                    <p class="">Career <br> Services</p>
-                                </div>
-                                <div class="text">
-                                    <p class="">Unique services offering <br> career development $ loan <br> assistance Right <br>memoring and guidance</p>
-                                </div>
-                                <div class="img">
-                                    <img src="public/img/servicei05.png">
-                                </div>
-                            </div>
-                            <div class="mobileRadio">
-                                <label for="ser4" class="pre"><i class="fas fa-angle-left"></i></label>
-                                <label for="ser1" class="next"><i class="fa fa-angle-right"></i></label>
-                            </div>
-                            
-                            <div class="mobileRadio">
-                                <label for="ser4" class="pre"><i class="fas fa-arrow-circle-left"></i></label>
-                                <label for="ser1" class="next"><i class="fas fa-arrow-circle-right"></i></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="aboutCont">
-                <div class="head">
-                    <div class="heading">
-                        <p class="hrWhite">About</p>
-                    </div>
-                    <div class="sub">
-                        <p class="">Founded by the highly renowned SVKM's NMIMS, NGASCE, i.e. NMIMS Global Access School for Continuing Education, is the leading distance management university in India. from being India's top-notch distance learning establishment to creating the best online education platform, it has been a dynamic fulfilling.</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="heading">
-                        <p class="hrWhite">NMIMS Global Access Forte</p>
-                    </div>
-                    <div class="items">
-                        <div class="item">
-                            <div class="title">
-                                <p class="">38000+</p>
-                            </div>
-                            <div class="text">
-                                <p class="">Active students</p>
-                            </div>
-                            <div class="img">
-                                <img src="public/img/abouti01.png">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="title">
-                                <p class="">6000+</p>
-                            </div>
-                            <div class="text">
-                                <p class="">Alumni</p>
-                            </div>
-                            <div class="img">
-                                <img src="public/img/abouti02.png">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="text">
-                                <p class="">Students from</p>
-                            </div>
-                            <div class="title">
-                                <p class="">300+</p>
-                            </div>
-                            <div class="text">
-                                <p class="">Locations across India</p>
-                            </div>
-                            <div class="img">
-                                <img src="public/img/abouti03.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="connect">
-            <div class="connectCont">
-                <div class="aep-img">
-                    <img src="" alt="img">
-                </div>
-                <div class="partner">
-                    <div class="top">
-                        <div class="img">
-                            <img src="public/img/partner.jpg">
-                        </div>
-                        <div class="title">
-                            <p class="">Authorised <span class="fRed">Enrolment Partner</span></p>
+                            <p class="">Connect</p>
                         </div>
                         <div class="sub">
-                            <p class="">Halo Technologies Pvt. Ltd.</p>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <p class="">As an official Authorised Enrolment Partner of NGA-SCE, we provide logistical support to the students enrolled through this respective centres and assist & facilitate prospective students to take admissions.</p>
-                    </div>
-                    <div class="text">
-                        <p class=""><span class="fRed">Note*: </span>Program delivery remains a prerogative of NGA-SGE alone., <br>Authorized Enrolment Partner has no role in it.</p>
-                    </div>
-                </div>
-                <div class="connectDetail">
-                    <div class="img">
-                        <img src="public/img/" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="head">
-                            <div class="heading">
-                                <p class="">Connect</p>
-                            </div>
-                            <div class="sub">
-                                <div class="connectType">
-                                    <div class="address">
-                                        <p class="">  <span> Address:</span> Upper Ground Floor, KP – 1, Pitampura, New Delhi – 110088 New Delhi</p>
-                                    </div>
-                                    <div class="website">
-                                        <a href="https://distance.nmims.edu" target="blank" class=""> <span> Website:</span> nmims.edu</a>
-                                    </div>
-                                    <div class="email">
-                                        <a href="mailto: ngasce@nmims.edu" class=""> <span> email: </span> ngasce@nmims.edu</a>
-                                    </div>
-                                    <div class="pNumber">
-                                        <a href="Tel:18001025136 " class=""> <span> Phone No.:</span>   1800 1025 136</a>
-                                    </div>
+                            <div class="connectType">
+                                <div class="address">
+                                    <p class=""> <span> Address:</span>  79, First Floor, Panchsheel Park, Opposite Rajendra Nagar Metro Station, Sahibabad, Ghaziabad 201005</p>
                                 </div>
-                                <div class="social">
-                                    <div class="icon fb">
-                                        <a href="https://www.facebook.com/NMIMSSCE" target="_blank"><i class="fab fa-facebook"></i></a>
-                                    </div>
-                                    <div class="icon linkedin"><a href="https://www.linkedin.com/company/13365633/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                                    <div class="insta icon">
-                                      <a href="https://www.instagram.com/nmimsglobalaccesssce/" target="_blank"><i class="fab fa-instagram"></i>  </a>
-                                    </div>
+                                <div class="website">
+                                    <a href="https://distance.nmims.edu" target="blank" class=""> <span> Website:</span> nmims.edu</a>
+                                </div>
+                                <div class="email">
+                                    <a href="mailto: ngasce@nmims.edu" class=""> <span> email: </span> ngasce@nmims.edu</a>
+                                </div>
+                                <div class="pNumber">
+                                    <a href="Tel:18001025136 " class=""> <span> Phone No.:</span> +91 95404 01818</a>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <div class="icon fb">
+                                    <a href="https://www.facebook.com/NMIMSSCE" target="_blank"><i class="fab fa-facebook"></i></a>
+                                </div>
+                                <div class="icon linkedin"><a href="https://www.linkedin.com/company/13365633/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                                <div class="insta icon">
+                                    <a href="https://www.instagram.com/nmimsglobalaccesssce/" target="_blank"><i class="fab fa-instagram"></i> </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="office">
-            <div class="officeCont">
-                <div class="head">
-                    <div class="heading">
-                        <p class="hrRed">NGA-SCE Regional <span class="fRed">Offices</span></p>
-                    </div>
-                    <div class="sub">
-                        <p class="">NGA-SCE holds a strong national presence with regional offices in Mumbai, Delhi, Ahemedbad, Navi Mumbai, Pune, Banglore, Hyderabad, Kolkata & Indore</p>
-                    </div>
+        </div>
+    </section>
+    <section class="office">
+        <div class="officeCont">
+            <div class="head">
+                <div class="heading">
+                    <p class="hrRed">NGA-SCE Regional <span class="fRed">Offices</span></p>
                 </div>
-                <div class="img">
-                    <img src="public/img/office.jpg">
+                <div class="sub">
+                    <p class="">NGA-SCE holds a strong national presence with regional offices in Mumbai, Delhi, Ahemedbad, Navi Mumbai, Pune, Banglore, Hyderabad, Kolkata & Indore</p>
                 </div>
             </div>
-        </section>
-
-        <section class="footer">
-            <div class="footerCont">
-                <div class="text">
-                    <p class=""> <span>&#169;</span>2019 Authorized Enrolment Partner. All Rights Reserved. | Privacy Policy</p>
-                </div>
+            <div class="img">
+                <img src="public/img/office.png">
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footerCont">
+            <div class="text">
+                <p class=""> <span>&#169;</span>2019 Authorized Enrolment Partner. All Rights Reserved. | Privacy Policy</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+    var x = '';
 
-        <script type="text/javascript">
-            var x = '';
-            function submit(){
-                let url_string = window.location.href;
-                var url = new URL(url_string);
-                var content = url.searchParams.get("utm_platform");
-                var geo = url.searchParams.get("utm_geo");
-                let element = document.getElementById('form-message');
-                if(window.location.href.includes('?success=true')){
-                     element.style.display = 'grid';
-                }else if(content){
-                     let input = document.getElementById('source');
-                     input.value = content;
-                }
+    function submit() {
+        let url_string = window.location.href;
+        var url = new URL(url_string);
+        var content = url.searchParams.get("utm_platform");
+        var geo = url.searchParams.get("utm_geo");
+        let element = document.getElementById('form-message');
+        if (window.location.href.includes('?success=true')) {
+            element.style.display = 'grid';
+        } else if (content) {
+            let input = document.getElementById('source');
+            input.value = content;
+        }
 
-                if(geo) {
-                    console.log(geo)
-                    let inputGeo = document.getElementById('geo');
-                    inputGeo.value = geo;
-                }
-            }
+        if (geo) {
+            console.log(geo)
+            let inputGeo = document.getElementById('geo');
+            inputGeo.value = geo;
+        }
+    }
 
-            function popupclose(){
-                let element = document.getElementById('form-message');
-                element.style.display = 'none';
-            }
-        </script>
-
-    </body>
+    function popupclose() {
+        let element = document.getElementById('form-message');
+        element.style.display = 'none';
+    }
+    </script>
+</body>
 
 </html>

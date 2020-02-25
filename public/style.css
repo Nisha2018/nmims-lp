@@ -218,7 +218,8 @@ select {
 .labels .label1,
 .services .sTwo .details,
 .services .sfive .details,
-.services .sFive .details {
+.services .sFive .details,
+.services .sSeven .details {
     background-color: #ce3036;
 }
 
@@ -229,7 +230,8 @@ select {
 
 .coverCont .cards .card:nth-child(2),
 .labels .label2,
-.services .sThree .details {
+.services .sThree .details,
+.services .sSix .details {
     background-color: #4242dc;
 }
 
@@ -410,12 +412,14 @@ input.input::placeholder {
     text-align: center;
 }
 
-.mobileRadio .pre {
+.mobileRadio .pre,
+label[for="pre"] {
     color: #ce3036;
     background: #e1dede;
 }
 
-.mobileRadio .next {
+.mobileRadio .next,
+label[for="next"] {
     background-color: #ce3036;
     color: #fff;
 }
@@ -509,7 +513,9 @@ input.input::placeholder {
 #ser2:checked~.content .sTwo,
 #ser3:checked~.content .sThree,
 #ser4:checked~.content .sFour,
-#ser5:checked~.content .sFive {
+#ser5:checked~.content .sFive,
+#ser6:checked~.content .sSix,
+#ser7:checked~.content .sSeven {
     display: grid;
     grid-row-gap: 15px;
 }
@@ -524,7 +530,9 @@ input.input::placeholder {
 #ser2~.content .sTwo,
 #ser3~.content .sThree,
 #ser4~.content .sFour,
-#ser5~.content .sFive {
+#ser5~.content .sFive,
+#ser6~.content .sSix,
+#ser7~.content .sSeven {
     display: none;
 }
 
@@ -757,6 +765,10 @@ input.input::placeholder {
     font-size: 24px;
 }
 
+.mobileRadio.show {
+    display: none;
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -899,9 +911,22 @@ input.input::placeholder {
         grid-template-columns: 20% 60% 20%;
     }
 
+    .servicesCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .servicesCont .content {
+        grid-column: span 2;
+    }
+
+    .servicesCont .head {
+        grid-row: 1;
+    }
+
     .servicesCont .items {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 15px;
     }
 
@@ -910,13 +935,28 @@ input.input::placeholder {
         grid-template-rows: 1fr;
     }
 
-    #ser1~.content .sOne,
-    #ser2~.content .sTwo,
-    #ser3~.content .sThree,
-    #ser4~.content .sFour,
-    #ser5~.content .sFive {
+    #ser1:checked~.content .sOne,
+    #ser2:checked~.content .sTwo,
+    #ser3:checked~.content .sThree,
+    #ser4:checked~.content .sFour,
+    #ser5:checked~.content .sFive,
+    #ser6:checked~.content .sSix,
+    #ser7:checked~.content .sSeven {
+        display: none;
+    }
+
+    #pre~.content .sOne,#pre~.content .sTwo,#pre~.content .sThree,#pre~.content .sFour,
+    #pre~.content .sFive ,.content .sSix ,.content .sSeven {
+        display: none;
+    }
+
+    #pre:checked~.content .sOne,#pre:checked~.content .sTwo,#pre:checked~.content .sThree {
         display: grid;
     }
+
+    #next:checked~.content .sFour, #next:checked~.content .sSix,#next:checked~.content .sSeven{
+    	display: grid;
+    } 
 
     .services .item .details {
         color: white;
@@ -961,6 +1001,16 @@ input.input::placeholder {
 
     .mobileRadio {
         display: none;
+    }
+
+    .mobileRadio.show {
+        display: grid;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .mobileRadio.show label {
+        cursor: pointer;
     }
 
     .connect .heading,
@@ -1061,6 +1111,28 @@ input.input::placeholder {
     .aboutCont .heading .hrWhite:after {
         left: 46%;
     }
+
+    .servicesCont .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+
+     #pre~.content .sOne,#pre~.content .sTwo,#pre~.content .sThree,#pre~.content .sFour,
+    #pre~.content .sFive ,.content .sSix ,.content .sSeven {
+        display: none;
+    }
+
+
+    #pre:checked~.content .sOne,#pre:checked~.content .sTwo,#pre:checked~.content .sThree,#pre:checked~.content .sFour,
+    #pre:checked~.content .sFive {
+        display: grid;
+    }
+
+    #next:checked~.content .sThree,#next:checked~.content .sFour,#next:checked~.content .sFive,#next:checked~.content .sSix,#next:checked~.content .sSeven{
+    	display: grid;
+    } 
+
 
     .services .item .details {
         grid-template-rows: 3fr 2fr 1fr;
