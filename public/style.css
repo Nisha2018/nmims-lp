@@ -968,6 +968,12 @@ label[for="next"] {
         display: grid;
     }
 
+    #pre:checked~.mobileRadio.show label[for="pre"],#next:checked~.mobileRadio.show label[for="next"],
+     #pre ~.mobileRadio.show label:hover {
+        color: #e1dede;
+        background: #ce3036;
+    }
+
     .services .item .details {
         color: white;
         padding: 20px 10px 10px 20px;
@@ -1017,6 +1023,11 @@ label[for="next"] {
         display: grid;
         grid-row: 1;
         justify-self: end;
+    }
+
+    .mobileRadio.show label.grey {
+        background: #e1dede;
+        color: #ce3036;
     }
 
     .mobileRadio.show label {
@@ -1134,11 +1145,6 @@ label[for="next"] {
         grid-column-gap: 15px;
     }
 
-    .content .sSix,
-    .content .sSeven {
-        transition: transform 0.5s;
-        transform: translateX(-600%);
-    }
 
 
     #pre~.content .sOne,
