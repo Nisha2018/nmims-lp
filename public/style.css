@@ -1029,7 +1029,7 @@ label[for="next"] {
     }
 
     .connectCont {
-        grid-template-columns: 1fr 1fr 40%;
+        grid-template-columns: 1fr 2fr 2fr;
     }
 
     .connectCont .aep-img {
@@ -1109,6 +1109,11 @@ label[for="next"] {
 
         .headerTop {
             grid-column: 1;
+        }
+
+        .headerCont .headerRight .title p:nth-child(2) {
+            font-size: 16px;
+            font-weight: 500;
         }
 
         .headerLeft .img {
