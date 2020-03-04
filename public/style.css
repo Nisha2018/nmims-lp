@@ -871,7 +871,7 @@ label[for="next"] {
 
     .programs .labels {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
@@ -913,12 +913,12 @@ label[for="next"] {
 
     .one .elements:after {
         border-top: 20px solid #ce3036;
-        left: 10%;
+        left: 15%;
     }
 
     .two .elements:after {
         border-top: 20px solid #4242dc;
-        left: 35%;
+        left: 48%;
     }
 
     .three .elements:after {
@@ -928,7 +928,7 @@ label[for="next"] {
 
     .four .elements:after {
         border-top: 20px solid #4d4d4d;
-        left: 85%;
+        left: 82%;
     }
 
     .about {
